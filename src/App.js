@@ -35,7 +35,7 @@ function App() {
         />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/nfts" element={<NFT />} />
+          <Route path="/place" element={<NFT />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </BrowserRouter>
