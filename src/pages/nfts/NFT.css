@@ -1,0 +1,106 @@
+.NFT-page .NFT-filters {
+  display: flex;
+  width: 85vw;
+  margin: 5rem auto 4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NFT-page .NFT-filters .dropdown {
+  width: 78%;
+}
+
+.NFT-page .NFT-filters .dropdown-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NFT-page .NFT-filters .dropbtn {
+  display: none;
+}
+
+.NFT-page .NFT-filters ul li {
+  font-size: 1.25rem;
+  color: var(--text-color);
+}
+
+.NFT-page .NFT-filters .location-filter {
+  display: flex;
+  align-items: center;
+  border: 1px solid #b4b4b4;
+  border-radius: 8px;
+  padding: 0.8rem 1.6rem;
+  margin-right: 4rem;
+}
+
+.NFT-page .NFT-filters .location-filter span {
+  padding-right: 1.5rem;
+  font-size: 1.25rem;
+  color: var(--text-color);
+}
+
+.NFT-page .grid-section {
+  margin-bottom: 6rem;
+}
+
+/* MEDIA QUERRIES */
+@media screen and (max-width: 825px) {
+  .NFT-page .NFT-filters {
+    margin: 1rem auto 4rem;
+  }
+
+  .NFT-page .NFT-filters .location-filter {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .NFT-page .NFT-filters {
+    margin-top: 3rem;
+  }
+
+  .NFT-page .NFT-filters .dropbtn {
+    border: 1px solid #b4b4b4;
+    border-radius: 8px;
+    padding: 1.1rem 4rem;
+    margin-right: 4rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: inline-block;
+    background-color: white;
+    color: var(--text-color);
+    font-family: var(--text-family);
+  }
+
+  .NFT-page .NFT-filters .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .NFT-page .NFT-filters .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .NFT-page .NFT-filters .dropdown-content li {
+    padding: 12px 16px;
+    display: block;
+  }
+
+  .NFT-page .NFT-filters .dropdown-content li:hover {
+    background-color: #f1f1f1;
+  }
+
+  .NFT-page .NFT-filters .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .NFT-page .NFT-filters .dropdown:hover .dropbtn {
+    color: var(--bg-color);
+  }
+}

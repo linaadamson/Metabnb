@@ -1,0 +1,83 @@
+.footer {
+  background: #1d1d1e;
+  color: white;
+  padding: 3rem 0;
+}
+
+.footer-container {
+  margin: 0 15rem 0 6.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container .community,
+.footer-container .places,
+.footer-container .about {
+  font-size: 0.875rem;
+  color: #f1f3f9;
+  line-height: 35px;
+  cursor: pointer;
+  justify-self: center;
+}
+
+.footer-container .community li:first-child,
+.footer-container .places li:first-child,
+.footer-container .about li:first-child {
+  color: white;
+  padding-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.footer-container .footer-icon {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container .social-icons img {
+  margin-right: 1.5rem;
+  margin-top: 5rem;
+}
+
+.footer p {
+  margin-left: 6.8rem;
+}
+
+@media screen and (max-width: 825px) {
+  .footer-container .footer-logo {
+    width: 150px;
+  }
+
+  .footer-container {
+    width: 85vw;
+    margin: 0 auto;
+  }
+
+  .footer-container .community,
+  .footer-container .places,
+  .footer-container .about {
+    line-height: 25px;
+  }
+
+  .footer-container .community li:first-child,
+  .footer-container .places li:first-child,
+  .footer-container .about li:first-child {
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer-container .footer-logo {
+    width: 110px;
+  }
+
+  .footer-container .social-icons img {
+    margin-right: 1.5rem;
+    margin-top: 3.5rem;
+    width: 14px;
+  }
+
+  .footer p {
+    margin-left: 4rem;
+  }
+}

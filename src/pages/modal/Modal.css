@@ -1,0 +1,80 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(64, 64, 64, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  padding: 5px 0 10px;
+  width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 16px;
+}
+
+.modal .wallet-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #cfd8dc;
+  padding: 20px;
+}
+
+.modal .wallet-header p {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.modal .wallet-header img,
+.modal .wallet img {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.modal .wallet-options {
+  padding: 20px;
+}
+
+.modal .wallet-options span {
+  display: block;
+  margin: 0.8rem 0 1rem;
+  font-size: 1rem;
+}
+
+.modal .wallet {
+  border: 1px solid #cfd8dc;
+  border-radius: 12px;
+  display: flex;
+  padding: 12px 20px;
+}
+
+.modal .wallet:hover {
+    background: #F8F9FA;
+}
+
+.modal .wallet div {
+  display: flex;
+  align-items: center;
+}
+
+.modal .wallet-options .metamask {
+  margin-bottom: 1rem;
+}
+
+.modal .wallet p {
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 550px) {
+  .modal {
+    width: 300px;
+    max-width: 350px;
+  }
+}
